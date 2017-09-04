@@ -62,6 +62,7 @@ public class CarSensor extends JFrame implements ICarSensor {
 				if (carDetected) {
 					detectorButton.setBackground(Color.GREEN);
 					detectorButton.setText("Car Detected");
+                                        setCarDetected(true);
 				}
 				else {
 					detectorButton.setBackground(Color.RED);
@@ -98,7 +99,10 @@ public class CarSensor extends JFrame implements ICarSensor {
 	public boolean carIsDetected() {
 		return carDetected;
 	}
-	
+        
+        public void setCarDetected(boolean carDetected) {
+            this.carDetected = carDetected;
+        }
 	
 
 }

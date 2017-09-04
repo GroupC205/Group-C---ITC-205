@@ -30,6 +30,11 @@ public class EntryController
 			ICarSensor is,
 			IEntryUI ui) {
 		//TODO Implement constructor
+                this.carpark = carpark;
+                this.entryGate = entryGate;
+                outsideSensor= os;
+                insideSensor = is;
+                
 	}
 
 
@@ -69,6 +74,10 @@ public class EntryController
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
 		// TODO Auto-generated method stub
+                if(detected == true){
+                    ui.display("Push Button");
+                }
+               
 		
 	}
 
