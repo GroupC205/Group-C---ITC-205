@@ -41,7 +41,7 @@ public class CarSensor extends JFrame implements ICarSensor {
 	/**
 	 * Create the frame.
 	 */
-	public CarSensor(String detectorId, int x, int y) {
+	public CarSensor(final String detectorId, int x, int y) {
 		this.detectorId = detectorId;
 		responders = new ArrayList<>();
 		setTitle(detectorId);
@@ -53,7 +53,7 @@ public class CarSensor extends JFrame implements ICarSensor {
 		contentPane.setLayout(null);
 		
 		carDetected = false;
-		JButton detectorButton = new JButton();
+		final JButton detectorButton = new JButton();
 		detectorButton.setFont(new Font("Tahoma", Font.PLAIN, 24));
 		detectorButton.setBounds(28, 24, 238, 135);
 		detectorButton.addActionListener(new ActionListener() {
@@ -62,7 +62,6 @@ public class CarSensor extends JFrame implements ICarSensor {
 				if (carDetected) {
 					detectorButton.setBackground(Color.GREEN);
 					detectorButton.setText("Car Detected");
-                                        setCarDetected(true);
 				}
 				else {
 					detectorButton.setBackground(Color.RED);
@@ -99,10 +98,7 @@ public class CarSensor extends JFrame implements ICarSensor {
 	public boolean carIsDetected() {
 		return carDetected;
 	}
-        
-        public void setCarDetected(boolean carDetected) {
-            this.carDetected = carDetected;
-        }
+	
 	
 
 }
