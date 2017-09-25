@@ -316,7 +316,13 @@ public class EntryController
 
 	@Override
 	public void notifyCarparkEvent() {
-		//need to implement
+		if (state_ == STATE.FULL) {
+			if (!carpark.isFull()) {
+				setState(STATE.WAITING);
+			}
+		}
+
+	}
 		
 	}
 
