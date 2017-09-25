@@ -42,7 +42,9 @@ public class Carpark implements ICarpark {
 	
 	@Override
 	public void deregister(ICarparkObserver observer) {
-		//need to implement
+		if (observers.contains(observer)) {
+			observers.remove(observer);
+		}
 	}
 	
 	
