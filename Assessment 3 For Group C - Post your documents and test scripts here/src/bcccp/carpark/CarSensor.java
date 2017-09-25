@@ -78,7 +78,9 @@ public class CarSensor extends JFrame implements ICarSensor {
 	}
 	
 	public void registerResponder(ICarSensorResponder responder) {
-		//need to implement
+		if (!responders.contains(responder)) {
+			responders.add(responder);
+		}
 	}
 	
 	public void deregisterResponder(ICarSensorResponder responder) {
