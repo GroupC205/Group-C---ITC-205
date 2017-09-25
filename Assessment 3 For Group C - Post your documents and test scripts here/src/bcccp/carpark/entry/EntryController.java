@@ -303,7 +303,13 @@ public class EntryController
 	
 	@Override
 	public void ticketTaken() {
-		//need to implement
+		if (state_ == STATE.ISSUED || state_ == STATE.VALIDATED ) {
+			setState(STATE.TAKEN);
+		}
+		else {
+			ui.beep();
+			log("ticketTaken: called while in incorrect state");
+		}
 	}
 
 
