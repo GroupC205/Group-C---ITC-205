@@ -151,7 +151,9 @@ public class Carpark implements ICarpark {
 
 	@Override
 	public boolean isSeasonTicketInUse(String ticketId) {
-		//need to implement
-		return false;
+		ISeasonTicket ticket = seasonTicketDAO.findTicketById(ticketId);
+		if (ticket == null) throw new RuntimeException("recordSeasonTicketExit: invalid ticketId - " + ticketId);
+
+		return ticket.inUse();
 	}
 }
