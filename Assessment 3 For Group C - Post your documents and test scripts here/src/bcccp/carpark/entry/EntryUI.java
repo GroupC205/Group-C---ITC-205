@@ -179,7 +179,9 @@ public class EntryUI extends JFrame implements IEntryUI {
 	
 	
 	private void takeTicket() {
-		//need to implement
+		controller.ticketTaken();
+		ticketPrinterTextArea.setText("");
+		seasonTicketTextField.setText("");
 	}
 
 	
