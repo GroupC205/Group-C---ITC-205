@@ -50,7 +50,9 @@ public class Carpark implements ICarpark {
 	
 	
 	private void notifyObservers() {
-		//need to implement
+		for (ICarparkObserver observer : observers) {
+			observer.notifyCarparkEvent();
+		}
 	}
 
 	
