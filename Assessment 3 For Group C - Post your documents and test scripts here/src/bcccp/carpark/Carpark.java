@@ -33,7 +33,9 @@ public class Carpark implements ICarpark {
 	
 	@Override
 	public void register(ICarparkObserver observer) {
-		//need to implement
+		if (!observers.contains(observer)) {
+			observers.add(observer);
+		}
 	}
 
 	
