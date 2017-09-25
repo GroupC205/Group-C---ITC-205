@@ -246,7 +246,27 @@ public class EntryController
 	
 	@Override
 	public void buttonPushed() {
-		//need to implement
+		if (state_ == STATE.WAITING) {
+			if (!carpark.isFull()) {
+				adhocTicket = carpark.issueAdhocTicket();
+
+				String carparkId = adhocTicket.getCarparkId();
+				int ticketNo = adhocTicket.getTicketNo();
+				entryTime = System.currentTimeMillis();
+				//entryTime = adhocTicket.getEntryDateTime();
+				String barcode = adhocTicket.getBarcode();
+
+				ui.printTicket(carparkId, ticketNo, entryTime, barcode);
+				setState(STATE.ISSUED);
+			}
+			else {
+				setState(STATE.FULL);
+			}
+		}
+		else {
+			ui.beep();
+			log("ButtonPushed: called while in incorrect state");
+		}
 	}
 
 	
