@@ -200,7 +200,6 @@ public class EntryUI extends JFrame implements IEntryUI {
 		builder.append("Ticket No  : " + tNo + "\n");
 		builder.append("Entry Time : " + entryDate + "\n");
 		builder.append("Barcode    : " + barcode + "\n");
-
 		ticketPrinterTextArea.setText(builder.toString());
 	}
 
