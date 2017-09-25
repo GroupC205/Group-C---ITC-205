@@ -49,8 +49,8 @@
       <file leaf-file-name="EntryUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bcccp/carpark/entry/EntryUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="193" column="27" lean-forward="false" selection-start-line="193" selection-start-column="27" selection-end-line="193" selection-end-column="27" />
+            <state relative-caret-position="493">
+              <caret line="173" column="29" lean-forward="false" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -66,10 +66,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/bcccp/carpark/entry/EntryUI.java" />
         <option value="$PROJECT_DIR$/src/bcccp/carpark/Carpark.java" />
         <option value="$PROJECT_DIR$/src/bcccp/carpark/CarSensor.java" />
         <option value="$PROJECT_DIR$/src/bcccp/carpark/entry/EntryController.java" />
+        <option value="$PROJECT_DIR$/src/bcccp/carpark/entry/EntryUI.java" />
       </list>
     </option>
   </component>
@@ -480,8 +480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bcccp/carpark/entry/EntryUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="193" column="27" lean-forward="false" selection-start-line="193" selection-start-column="27" selection-end-line="193" selection-end-column="27" />
+        <state relative-caret-position="493">
+          <caret line="173" column="29" lean-forward="false" selection-start-line="173" selection-start-column="17" selection-end-line="173" selection-end-column="29" />
           <folding />
         </state>
       </provider>
