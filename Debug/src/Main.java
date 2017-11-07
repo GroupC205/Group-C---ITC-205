@@ -54,6 +54,7 @@ public class Main {
                     if (winnings > 0) {
 	                    System.out.printf("%s won %d, balance now %d\n\n",
 	                    		player.getName(), winnings, player.getBalance());
+	                    player.receiveWinnings(winnings);
 	                	winCount++; 
                     }
                     else {
